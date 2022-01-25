@@ -1,0 +1,34 @@
+
+//dot_product
+PROCEDURE dot_product (V1,V2)
+VAR
+    n=INTEGER
+    V1,V2 = ARRAY_OF INTEGER[n] 
+    dot_product= FLOAT =0
+    
+BEGIN
+    for (let i = 0; i < n; i++)
+            dot_product = vect1[i] * vect2[i];
+END
+
+
+//find out if vectors are orthogonal or not
+
+FUNCTION boolean orthogonal_vectors (V1,V2) : 
+VAR
+   value = INTEGER ;
+   V1,V2 = ARRAY_OF INTEGER
+  
+BEGIN
+
+  value =dot_product(v1,v2)
+    for (let i = 0; i < n; i++)
+    if(value =0) then
+    {return true} ;
+    write (vectors are orthogonal)
+    else{
+        return false;
+        write (vectors are not orthogonal)
+    }
+END
+
